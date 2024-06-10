@@ -1,0 +1,32 @@
+{
+    "name": "@grapecity/wijmo.cultures",
+    "version": "5.20241.9",
+    "description": "UI library for pure JS, Angular, React, Vue and more...",
+    "author": "MESCIUS inc",
+    "license": "Commercial",
+    "homepage": "https://developer.mescius.com/wijmo",
+    "bugs": {
+        "url": "https://developer.mescius.com/forums/wijmo"
+    },
+    "keywords": [
+        "control",
+        "component",
+        "ui",
+        "control library",
+        "component library",
+        "ui library",
+        "control-library",
+        "component-library",
+        "ui-library",
+        "grid",
+        "data grid",
+        "data-grid",
+        "datagrid",
+        "angular grid",
+        "react grid",
+        "vue grid",
+        "angular-grid",
+        "react-grid",
+        "vue-grid"
+    ]
+}

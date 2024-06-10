@@ -1,0 +1,14 @@
+﻿/*!
+    *
+    * Wijmo Library 5.20241.9
+    * https://developer.mescius.com/wijmo
+    *
+    * Copyright(c) MESCIUS inc. All rights reserved.
+    *
+    * Licensed under the End-User License Agreement For MESCIUS Wijmo Software.
+    * us.sales@mescius.com
+    * https://developer.mescius.com/wijmo/licensing
+    *
+    */
+
+var __extends=this&&this.__extends||function(){var extendStatics=function(e,o){return(extendStatics=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,o){e.__proto__=o}||function(e,o){for(var t in o)o.hasOwnProperty(t)&&(e[t]=o[t])})(e,o)};return function(e,o){extendStatics(e,o);function __(){this.constructor=e}e.prototype=null===o?Object.create(o):(__.prototype=o.prototype,new __)}}();import{ComponentBase}from"@grapecity/wijmo.react.base";import*as wjcBarcodeSpecialized from"@grapecity/wijmo.barcode.specialized";var BarcodeDataMatrixEcc000=function(e){__extends(BarcodeDataMatrixEcc000,e);function BarcodeDataMatrixEcc000(o){return e.call(this,o,wjcBarcodeSpecialized.DataMatrixEcc000,{objectProps:["quietZone","font"]})||this}return BarcodeDataMatrixEcc000}(ComponentBase);export{BarcodeDataMatrixEcc000};var BarcodeDataMatrixEcc200=function(e){__extends(BarcodeDataMatrixEcc200,e);function BarcodeDataMatrixEcc200(o){return e.call(this,o,wjcBarcodeSpecialized.DataMatrixEcc200,{objectProps:["quietZone","font"]})||this}return BarcodeDataMatrixEcc200}(ComponentBase);export{BarcodeDataMatrixEcc200};var BarcodeCode49=function(e){__extends(BarcodeCode49,e);function BarcodeCode49(o){return e.call(this,o,wjcBarcodeSpecialized.Code49,{objectProps:["quietZone","font"]})||this}return BarcodeCode49}(ComponentBase);export{BarcodeCode49};var BarcodeCode93=function(e){__extends(BarcodeCode93,e);function BarcodeCode93(o){return e.call(this,o,wjcBarcodeSpecialized.Code93,{objectProps:["quietZone","font"]})||this}return BarcodeCode93}(ComponentBase);export{BarcodeCode93};var BarcodeItf14=function(e){__extends(BarcodeItf14,e);function BarcodeItf14(o){return e.call(this,o,wjcBarcodeSpecialized.Itf14,{objectProps:["quietZone","font"]})||this}return BarcodeItf14}(ComponentBase);export{BarcodeItf14};var BarcodeInterleaved2of5=function(e){__extends(BarcodeInterleaved2of5,e);function BarcodeInterleaved2of5(o){return e.call(this,o,wjcBarcodeSpecialized.Interleaved2of5,{objectProps:["quietZone","font"]})||this}return BarcodeInterleaved2of5}(ComponentBase);export{BarcodeInterleaved2of5};var BarcodeJapanesePostal=function(e){__extends(BarcodeJapanesePostal,e);function BarcodeJapanesePostal(o){return e.call(this,o,wjcBarcodeSpecialized.JapanesePostal,{objectProps:["quietZone","font"]})||this}return BarcodeJapanesePostal}(ComponentBase);export{BarcodeJapanesePostal};

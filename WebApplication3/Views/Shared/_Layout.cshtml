@@ -1,0 +1,134 @@
+﻿@model WebApplication3.Models.Windows.HomeForm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication3</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication3.styles.css" asp-append-version="true" />
+    <link href="~/css/wijmo/wijmo.min.css" rel="stylesheet"/>
+    <style>
+         #Form {
+                border: 1px solid black;
+                width: @(Model?.Size != null ? Model.Size[0] : 300)px;
+                height: @(Model?.Size != null ? Model.Size[1] : 200)px;
+            position: relative;
+            }.control {
+                position: absolute;
+            }  
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+            @if (Model != null)
+            {
+                 <div id="Form" data-id="@Model.Id" style="border: 1px solid black; width: @Model.Size[0]px; height: @Model.Size[1]px;">
+                    @* InputColor
+                    InputDate
+                    InputDateRange
+                    InputDateTime
+                    InputMask
+                    InputNumber
+                    InputTime *@
+                    @foreach (SRWebBase.Models.Controls.Control control in Model.Controls)
+                    {
+                        if (control is SRWebBase.Models.Controls.TextBox textBox)
+                        {
+                            <input class="control" value="@textBox.Text" id="@textBox.Id" type="text" style="top:@textBox.Location[1]px; left:@textBox.Location[0]px; width:@textBox.Size[0]px; height:@textBox.Size[1]px; background-color:@textBox.BackgroundColorHex;" />
+                        }
+                        else if (control is SRWebBase.Models.Controls.Button button)
+                        {
+                            <button class="control" value="aaaaa" id="@button.Id" style="top:@button.Location[1]px; left:@button.Location[0]px; width:@button.Size[0]px; height:@button.Size[1]px;background-color:@button.BackgroundColorHex;">
+                                @button.Text
+                            </button>
+                        }
+                    }
+
+                    @*  <div class="out-form">
+
+                    <div class="form-group">
+                    <label for="theInputColor">InputColor</label>
+                    <input id="theInputColor">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputDate">InputDate</label>
+                    <input id="theInputDate">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputDateRange">InputDateRange</label>
+                    <input id="theInputDateRange">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputDateTime">InputDateTime</label>
+                    <input id="theInputDateTime">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputMask">InputMask</label>
+                    <input id="theInputMask">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputNumber">InputNumber</label>
+                    <input id="theInputNumber">
+                    </div>
+                    <div class="form-group">
+                    <label for="theInputTime">InputTime</label>
+                    <input id="theInputTime">
+                    </div>
+                    </div> *@
+                </div>
+            } 
+          
+        </main>
+
+ 
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - WebApplication3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/wijmo/controls/wijmo.min.js"></script>
+    <script src="~/js/wijmo/controls/wijmo.input.min.js "></script>
+    <script src="https://unpkg.com/loglevel/dist/loglevel.min.js"></script>
+    <script src="~/js/Home/Index.js" type="module"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @{
+        var formObjJson = Model != null ? Model  : null;
+    }
+    <script>
+        var eventUrl = '@Url.Action("Event", "Home")';
+        var attributeUrl = '@Url.Action("AttributeValue", "Home")';
+        var formUrl = '@Url.Action("Index", "Home")'; 
+    </script>
+</body>
+</html>

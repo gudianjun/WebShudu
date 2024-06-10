@@ -1,0 +1,61 @@
+﻿/*!
+    *
+    * Wijmo Library 5.20241.9
+    * https://developer.mescius.com/wijmo
+    *
+    * Copyright(c) MESCIUS inc. All rights reserved.
+    *
+    * Licensed under the End-User License Agreement For MESCIUS Wijmo Software.
+    * us.sales@mescius.com
+    * https://developer.mescius.com/wijmo/licensing
+    *
+    */
+
+import * as ɵngcc0 from '@angular/core';
+var __extends=this&&this.__extends||function(){var extendStatics=function(e,o){return(extendStatics=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,o){e.__proto__=o}||function(e,o){for(var t in o)o.hasOwnProperty(t)&&(e[t]=o[t])})(e,o)};return function(e,o){extendStatics(e,o);function __(){this.constructor=e}e.prototype=null===o?Object.create(o):(__.prototype=o.prototype,new __)}}(),__decorate=this&&this.__decorate||function(e,o,t,r){var n,i=arguments.length,a=i<3?o:null===r?r=Object.getOwnPropertyDescriptor(o,t):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(e,o,t,r);else for(var d=e.length-1;d>=0;d--)(n=e[d])&&(a=(i<3?n(a):i>3?n(o,t,a):n(o,t))||a);return i>3&&a&&Object.defineProperty(o,t,a),a},__param=this&&this.__param||function(e,o){return function(t,r){o(t,r,e)}};import{Component,NgModule,ElementRef,Injector,Optional,forwardRef,Inject,SkipSelf}from"@angular/core";import{CommonModule}from"@angular/common";import{NG_VALUE_ACCESSOR}from"@angular/forms";import{WjDirectiveBehavior,WjValueAccessorFactory}from"@grapecity/wijmo.angular2.directivebase";import*as wjcViewer from"@grapecity/wijmo.viewer";var wjReportViewerMeta={selector:"wj-report-viewer",template:"",inputs:["asyncBindings","wjModelProperty","isDisabled","tabOrder","serviceUrl","filePath","fullScreen","zoomFactor","zoomMode","mouseMode","viewMode","requestHeaders","parameters","paginated","reportName"],outputs:["initialized","gotFocusNg: gotFocus","lostFocusNg: lostFocus","refreshingNg: refreshing","refreshedNg: refreshed","invalidInputNg: invalidInput","pageIndexChangedNg: pageIndexChanged","viewModeChangedNg: viewModeChanged","viewModeChangePC: viewModeChange","mouseModeChangedNg: mouseModeChanged","mouseModeChangePC: mouseModeChange","fullScreenChangedNg: fullScreenChanged","fullScreenChangePC: fullScreenChange","zoomFactorChangedNg: zoomFactorChanged","zoomFactorChangePC: zoomFactorChange","zoomModeChangedNg: zoomModeChanged","zoomModeChangePC: zoomModeChange","queryLoadingDataNg: queryLoadingData","beforeSendRequestNg: beforeSendRequest"],providers:[{provide:NG_VALUE_ACCESSOR,useFactory:WjValueAccessorFactory,multi:!0,deps:["WjComponent"]}]};export{wjReportViewerMeta};var WjReportViewer=function(e){__extends(WjReportViewer,e);function WjReportViewer(o,t,r){var n=e.call(this,WjDirectiveBehavior.getHostElement(o,t))||this;n.isInitialized=!1;n._wjBehaviour=WjDirectiveBehavior.attach(n,o,t,r);n.created();return n}o=WjReportViewer;WjReportViewer.prototype.created=function(){};WjReportViewer.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjReportViewer.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjReportViewer.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};WjReportViewer.prototype.addEventListener=function(o,t,r,n){var i=this;void 0===n&&(n=!1);var a=WjDirectiveBehavior,d=a.getZone(this);d&&a.outsideZoneEvents[t]?d.runOutsideAngular((function(){e.prototype.addEventListener.call(i,o,t,r,n)})):e.prototype.addEventListener.call(this,o,t,r,n)};var o;WjReportViewer.meta={outputs:wjReportViewerMeta.outputs,changeEvents:{viewModeChanged:["viewMode"],mouseModeChanged:["mouseMode"],fullScreenChanged:["fullScreen"],zoomFactorChanged:["zoomFactor"],zoomModeChanged:["zoomMode"]}};
+WjReportViewer.ɵfac = function WjReportViewer_Factory(t) { return new (t || WjReportViewer)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjReportViewer.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjReportViewer, selectors: [["wj-report-viewer"]], inputs: { asyncBindings: "asyncBindings", wjModelProperty: "wjModelProperty", isDisabled: "isDisabled", tabOrder: "tabOrder", serviceUrl: "serviceUrl", filePath: "filePath", fullScreen: "fullScreen", zoomFactor: "zoomFactor", zoomMode: "zoomMode", mouseMode: "mouseMode", viewMode: "viewMode", requestHeaders: "requestHeaders", parameters: "parameters", paginated: "paginated", reportName: "reportName" }, outputs: { initialized: "initialized", gotFocusNg: "gotFocus", lostFocusNg: "lostFocus", refreshingNg: "refreshing", refreshedNg: "refreshed", invalidInputNg: "invalidInput", pageIndexChangedNg: "pageIndexChanged", viewModeChangedNg: "viewModeChanged", viewModeChangePC: "viewModeChange", mouseModeChangedNg: "mouseModeChanged", mouseModeChangePC: "mouseModeChange", fullScreenChangedNg: "fullScreenChanged", fullScreenChangePC: "fullScreenChange", zoomFactorChangedNg: "zoomFactorChanged", zoomFactorChangePC: "zoomFactorChange", zoomModeChangedNg: "zoomModeChanged", zoomModeChangePC: "zoomModeChange", queryLoadingDataNg: "queryLoadingData", beforeSendRequestNg: "beforeSendRequest" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return o; })) }].concat(wjReportViewerMeta.providers))], decls: 0, vars: 0, template: function WjReportViewer_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjReportViewer, [{
+        type: Component,
+        args: [{ selector: wjReportViewerMeta.selector, template: wjReportViewerMeta.template, inputs: wjReportViewerMeta.inputs, outputs: wjReportViewerMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return o; })) }].concat(wjReportViewerMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjReportViewer=o=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjReportViewer)}(wjcViewer.ReportViewer);export{WjReportViewer};var wjPdfViewerMeta={selector:"wj-pdf-viewer",template:"",inputs:["asyncBindings","wjModelProperty","isDisabled","tabOrder","serviceUrl","filePath","fullScreen","zoomFactor","zoomMode","mouseMode","viewMode","requestHeaders"],outputs:["initialized","gotFocusNg: gotFocus","lostFocusNg: lostFocus","refreshingNg: refreshing","refreshedNg: refreshed","invalidInputNg: invalidInput","pageIndexChangedNg: pageIndexChanged","viewModeChangedNg: viewModeChanged","viewModeChangePC: viewModeChange","mouseModeChangedNg: mouseModeChanged","mouseModeChangePC: mouseModeChange","fullScreenChangedNg: fullScreenChanged","fullScreenChangePC: fullScreenChange","zoomFactorChangedNg: zoomFactorChanged","zoomFactorChangePC: zoomFactorChange","zoomModeChangedNg: zoomModeChanged","zoomModeChangePC: zoomModeChange","queryLoadingDataNg: queryLoadingData","beforeSendRequestNg: beforeSendRequest"],providers:[{provide:NG_VALUE_ACCESSOR,useFactory:WjValueAccessorFactory,multi:!0,deps:["WjComponent"]}]};export{wjPdfViewerMeta};var WjPdfViewer=function(e){__extends(WjPdfViewer,e);function WjPdfViewer(o,t,r){var n=e.call(this,WjDirectiveBehavior.getHostElement(o,t))||this;n.isInitialized=!1;n._wjBehaviour=WjDirectiveBehavior.attach(n,o,t,r);n.created();return n}o=WjPdfViewer;WjPdfViewer.prototype.created=function(){};WjPdfViewer.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjPdfViewer.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjPdfViewer.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};WjPdfViewer.prototype.addEventListener=function(o,t,r,n){var i=this;void 0===n&&(n=!1);var a=WjDirectiveBehavior,d=a.getZone(this);d&&a.outsideZoneEvents[t]?d.runOutsideAngular((function(){e.prototype.addEventListener.call(i,o,t,r,n)})):e.prototype.addEventListener.call(this,o,t,r,n)};var o;WjPdfViewer.meta={outputs:wjPdfViewerMeta.outputs,changeEvents:{viewModeChanged:["viewMode"],mouseModeChanged:["mouseMode"],fullScreenChanged:["fullScreen"],zoomFactorChanged:["zoomFactor"],zoomModeChanged:["zoomMode"]}};
+WjPdfViewer.ɵfac = function WjPdfViewer_Factory(t) { return new (t || WjPdfViewer)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjPdfViewer.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjPdfViewer, selectors: [["wj-pdf-viewer"]], inputs: { asyncBindings: "asyncBindings", wjModelProperty: "wjModelProperty", isDisabled: "isDisabled", tabOrder: "tabOrder", serviceUrl: "serviceUrl", filePath: "filePath", fullScreen: "fullScreen", zoomFactor: "zoomFactor", zoomMode: "zoomMode", mouseMode: "mouseMode", viewMode: "viewMode", requestHeaders: "requestHeaders" }, outputs: { initialized: "initialized", gotFocusNg: "gotFocus", lostFocusNg: "lostFocus", refreshingNg: "refreshing", refreshedNg: "refreshed", invalidInputNg: "invalidInput", pageIndexChangedNg: "pageIndexChanged", viewModeChangedNg: "viewModeChanged", viewModeChangePC: "viewModeChange", mouseModeChangedNg: "mouseModeChanged", mouseModeChangePC: "mouseModeChange", fullScreenChangedNg: "fullScreenChanged", fullScreenChangePC: "fullScreenChange", zoomFactorChangedNg: "zoomFactorChanged", zoomFactorChangePC: "zoomFactorChange", zoomModeChangedNg: "zoomModeChanged", zoomModeChangePC: "zoomModeChange", queryLoadingDataNg: "queryLoadingData", beforeSendRequestNg: "beforeSendRequest" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return o; })) }].concat(wjPdfViewerMeta.providers))], decls: 0, vars: 0, template: function WjPdfViewer_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjPdfViewer, [{
+        type: Component,
+        args: [{ selector: wjPdfViewerMeta.selector, template: wjPdfViewerMeta.template, inputs: wjPdfViewerMeta.inputs, outputs: wjPdfViewerMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return o; })) }].concat(wjPdfViewerMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjPdfViewer=o=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjPdfViewer)}(wjcViewer.PdfViewer);export{WjPdfViewer};var moduleExports=[WjReportViewer,WjPdfViewer],WjViewerModule=function(){function WjViewerModule(){}
+WjViewerModule.ɵfac = function WjViewerModule_Factory(t) { return new (t || WjViewerModule)(); };
+WjViewerModule.ɵmod = /*@__PURE__*/ ɵngcc0.ɵɵdefineNgModule({ type: WjViewerModule });
+WjViewerModule.ɵinj = /*@__PURE__*/ ɵngcc0.ɵɵdefineInjector({ imports: [CommonModule] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjViewerModule, [{
+        type: NgModule,
+        args: [{ imports: [CommonModule], declarations: moduleExports.slice(), exports: moduleExports.slice() }]
+    }], function () { return []; }, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(WjViewerModule, { declarations: function () { return [WjReportViewer, WjPdfViewer]; }, imports: function () { return [CommonModule]; }, exports: function () { return [WjReportViewer, WjPdfViewer]; } }); })();return WjViewerModule}();export{WjViewerModule};

@@ -1,0 +1,175 @@
+﻿/*!
+    *
+    * Wijmo Library 5.20241.9
+    * https://developer.mescius.com/wijmo
+    *
+    * Copyright(c) MESCIUS inc. All rights reserved.
+    *
+    * Licensed under the End-User License Agreement For MESCIUS Wijmo Software.
+    * us.sales@mescius.com
+    * https://developer.mescius.com/wijmo/licensing
+    *
+    */
+
+import * as ɵngcc0 from '@angular/core';
+var __extends=this&&this.__extends||function(){var extendStatics=function(e,t){return(extendStatics=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var r in t)t.hasOwnProperty(r)&&(e[r]=t[r])})(e,t)};return function(e,t){extendStatics(e,t);function __(){this.constructor=e}e.prototype=null===t?Object.create(t):(__.prototype=t.prototype,new __)}}(),__decorate=this&&this.__decorate||function(e,t,r,i){var a,n=arguments.length,o=n<3?t:null===i?i=Object.getOwnPropertyDescriptor(t,r):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(e,t,r,i);else for(var s=e.length-1;s>=0;s--)(a=e[s])&&(o=(n<3?a(o):n>3?a(t,r,o):a(t,r))||o);return n>3&&o&&Object.defineProperty(t,r,o),o},__param=this&&this.__param||function(e,t){return function(r,i){t(r,i,e)}};import{Component,NgModule,ElementRef,Injector,Optional,forwardRef,Inject,SkipSelf}from"@angular/core";import{CommonModule}from"@angular/common";import{WjDirectiveBehavior}from"@grapecity/wijmo.angular2.directivebase";import*as wjcChartAnalytics from"@grapecity/wijmo.chart.analytics";var wjFlexChartTrendLineMeta={selector:"wj-flex-chart-trend-line",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","sampleCount","order","fitType"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartTrendLineMeta};var WjFlexChartTrendLine=function(e){__extends(WjFlexChartTrendLine,e);function WjFlexChartTrendLine(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartTrendLine;WjFlexChartTrendLine.prototype.created=function(){};WjFlexChartTrendLine.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartTrendLine.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartTrendLine.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartTrendLine.meta={outputs:wjFlexChartTrendLineMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartTrendLine.ɵfac = function WjFlexChartTrendLine_Factory(t) { return new (t || WjFlexChartTrendLine)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartTrendLine.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartTrendLine, selectors: [["wj-flex-chart-trend-line"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", sampleCount: "sampleCount", order: "order", fitType: "fitType" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartTrendLineMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartTrendLine_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartTrendLine, [{
+        type: Component,
+        args: [{ selector: wjFlexChartTrendLineMeta.selector, template: wjFlexChartTrendLineMeta.template, inputs: wjFlexChartTrendLineMeta.inputs, outputs: wjFlexChartTrendLineMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartTrendLineMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartTrendLine=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartTrendLine)}(wjcChartAnalytics.TrendLine);export{WjFlexChartTrendLine};var wjFlexChartMovingAverageMeta={selector:"wj-flex-chart-moving-average",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","sampleCount","period","type"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartMovingAverageMeta};var WjFlexChartMovingAverage=function(e){__extends(WjFlexChartMovingAverage,e);function WjFlexChartMovingAverage(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartMovingAverage;WjFlexChartMovingAverage.prototype.created=function(){};WjFlexChartMovingAverage.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartMovingAverage.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartMovingAverage.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartMovingAverage.meta={outputs:wjFlexChartMovingAverageMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartMovingAverage.ɵfac = function WjFlexChartMovingAverage_Factory(t) { return new (t || WjFlexChartMovingAverage)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartMovingAverage.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartMovingAverage, selectors: [["wj-flex-chart-moving-average"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", sampleCount: "sampleCount", period: "period", type: "type" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartMovingAverageMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartMovingAverage_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartMovingAverage, [{
+        type: Component,
+        args: [{ selector: wjFlexChartMovingAverageMeta.selector, template: wjFlexChartMovingAverageMeta.template, inputs: wjFlexChartMovingAverageMeta.inputs, outputs: wjFlexChartMovingAverageMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartMovingAverageMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartMovingAverage=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartMovingAverage)}(wjcChartAnalytics.MovingAverage);export{WjFlexChartMovingAverage};var wjFlexChartYFunctionSeriesMeta={selector:"wj-flex-chart-y-function-series",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","sampleCount","min","max","func"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartYFunctionSeriesMeta};var WjFlexChartYFunctionSeries=function(e){__extends(WjFlexChartYFunctionSeries,e);function WjFlexChartYFunctionSeries(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartYFunctionSeries;WjFlexChartYFunctionSeries.prototype.created=function(){};WjFlexChartYFunctionSeries.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartYFunctionSeries.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartYFunctionSeries.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartYFunctionSeries.meta={outputs:wjFlexChartYFunctionSeriesMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartYFunctionSeries.ɵfac = function WjFlexChartYFunctionSeries_Factory(t) { return new (t || WjFlexChartYFunctionSeries)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartYFunctionSeries.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartYFunctionSeries, selectors: [["wj-flex-chart-y-function-series"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", sampleCount: "sampleCount", min: "min", max: "max", func: "func" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartYFunctionSeriesMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartYFunctionSeries_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartYFunctionSeries, [{
+        type: Component,
+        args: [{ selector: wjFlexChartYFunctionSeriesMeta.selector, template: wjFlexChartYFunctionSeriesMeta.template, inputs: wjFlexChartYFunctionSeriesMeta.inputs, outputs: wjFlexChartYFunctionSeriesMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartYFunctionSeriesMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartYFunctionSeries=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartYFunctionSeries)}(wjcChartAnalytics.YFunctionSeries);export{WjFlexChartYFunctionSeries};var wjFlexChartParametricFunctionSeriesMeta={selector:"wj-flex-chart-parametric-function-series",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","sampleCount","min","max","func","xFunc","yFunc"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartParametricFunctionSeriesMeta};var WjFlexChartParametricFunctionSeries=function(e){__extends(WjFlexChartParametricFunctionSeries,e);function WjFlexChartParametricFunctionSeries(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartParametricFunctionSeries;WjFlexChartParametricFunctionSeries.prototype.created=function(){};WjFlexChartParametricFunctionSeries.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartParametricFunctionSeries.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartParametricFunctionSeries.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartParametricFunctionSeries.meta={outputs:wjFlexChartParametricFunctionSeriesMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartParametricFunctionSeries.ɵfac = function WjFlexChartParametricFunctionSeries_Factory(t) { return new (t || WjFlexChartParametricFunctionSeries)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartParametricFunctionSeries.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartParametricFunctionSeries, selectors: [["wj-flex-chart-parametric-function-series"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", sampleCount: "sampleCount", min: "min", max: "max", func: "func", xFunc: "xFunc", yFunc: "yFunc" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartParametricFunctionSeriesMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartParametricFunctionSeries_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartParametricFunctionSeries, [{
+        type: Component,
+        args: [{ selector: wjFlexChartParametricFunctionSeriesMeta.selector, template: wjFlexChartParametricFunctionSeriesMeta.template, inputs: wjFlexChartParametricFunctionSeriesMeta.inputs, outputs: wjFlexChartParametricFunctionSeriesMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartParametricFunctionSeriesMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartParametricFunctionSeries=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartParametricFunctionSeries)}(wjcChartAnalytics.ParametricFunctionSeries);export{WjFlexChartParametricFunctionSeries};var wjFlexChartWaterfallMeta={selector:"wj-flex-chart-waterfall",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","relativeData","start","startLabel","showTotal","totalLabel","showIntermediateTotal","intermediateTotalPositions","intermediateTotalLabels","connectorLines","styles"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartWaterfallMeta};var WjFlexChartWaterfall=function(e){__extends(WjFlexChartWaterfall,e);function WjFlexChartWaterfall(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartWaterfall;WjFlexChartWaterfall.prototype.created=function(){};WjFlexChartWaterfall.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartWaterfall.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartWaterfall.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartWaterfall.meta={outputs:wjFlexChartWaterfallMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartWaterfall.ɵfac = function WjFlexChartWaterfall_Factory(t) { return new (t || WjFlexChartWaterfall)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartWaterfall.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartWaterfall, selectors: [["wj-flex-chart-waterfall"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", relativeData: "relativeData", start: "start", startLabel: "startLabel", showTotal: "showTotal", totalLabel: "totalLabel", showIntermediateTotal: "showIntermediateTotal", intermediateTotalPositions: "intermediateTotalPositions", intermediateTotalLabels: "intermediateTotalLabels", connectorLines: "connectorLines", styles: "styles" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartWaterfallMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartWaterfall_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartWaterfall, [{
+        type: Component,
+        args: [{ selector: wjFlexChartWaterfallMeta.selector, template: wjFlexChartWaterfallMeta.template, inputs: wjFlexChartWaterfallMeta.inputs, outputs: wjFlexChartWaterfallMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartWaterfallMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartWaterfall=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartWaterfall)}(wjcChartAnalytics.Waterfall);export{WjFlexChartWaterfall};var wjFlexChartBoxWhiskerMeta={selector:"wj-flex-chart-box-whisker",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","quartileCalculation","groupWidth","gapWidth","showMeanLine","meanLineStyle","showMeanMarker","meanMarkerStyle","showInnerPoints","showOutliers"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartBoxWhiskerMeta};var WjFlexChartBoxWhisker=function(e){__extends(WjFlexChartBoxWhisker,e);function WjFlexChartBoxWhisker(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartBoxWhisker;WjFlexChartBoxWhisker.prototype.created=function(){};WjFlexChartBoxWhisker.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartBoxWhisker.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartBoxWhisker.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartBoxWhisker.meta={outputs:wjFlexChartBoxWhiskerMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartBoxWhisker.ɵfac = function WjFlexChartBoxWhisker_Factory(t) { return new (t || WjFlexChartBoxWhisker)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartBoxWhisker.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartBoxWhisker, selectors: [["wj-flex-chart-box-whisker"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", quartileCalculation: "quartileCalculation", groupWidth: "groupWidth", gapWidth: "gapWidth", showMeanLine: "showMeanLine", meanLineStyle: "meanLineStyle", showMeanMarker: "showMeanMarker", meanMarkerStyle: "meanMarkerStyle", showInnerPoints: "showInnerPoints", showOutliers: "showOutliers" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartBoxWhiskerMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartBoxWhisker_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartBoxWhisker, [{
+        type: Component,
+        args: [{ selector: wjFlexChartBoxWhiskerMeta.selector, template: wjFlexChartBoxWhiskerMeta.template, inputs: wjFlexChartBoxWhiskerMeta.inputs, outputs: wjFlexChartBoxWhiskerMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartBoxWhiskerMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartBoxWhisker=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartBoxWhisker)}(wjcChartAnalytics.BoxWhisker);export{WjFlexChartBoxWhisker};var wjFlexChartErrorBarMeta={selector:"wj-flex-chart-error-bar",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","chartType","errorBarStyle","value","errorAmount","endStyle","direction"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartErrorBarMeta};var WjFlexChartErrorBar=function(e){__extends(WjFlexChartErrorBar,e);function WjFlexChartErrorBar(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartErrorBar;WjFlexChartErrorBar.prototype.created=function(){};WjFlexChartErrorBar.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartErrorBar.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartErrorBar.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartErrorBar.meta={outputs:wjFlexChartErrorBarMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartErrorBar.ɵfac = function WjFlexChartErrorBar_Factory(t) { return new (t || WjFlexChartErrorBar)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartErrorBar.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartErrorBar, selectors: [["wj-flex-chart-error-bar"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", chartType: "chartType", errorBarStyle: "errorBarStyle", value: "value", errorAmount: "errorAmount", endStyle: "endStyle", direction: "direction" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartErrorBarMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartErrorBar_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartErrorBar, [{
+        type: Component,
+        args: [{ selector: wjFlexChartErrorBarMeta.selector, template: wjFlexChartErrorBarMeta.template, inputs: wjFlexChartErrorBarMeta.inputs, outputs: wjFlexChartErrorBarMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartErrorBarMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartErrorBar=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartErrorBar)}(wjcChartAnalytics.ErrorBar);export{WjFlexChartErrorBar};var wjFlexChartBreakEvenMeta={selector:"wj-flex-chart-break-even",template:"",inputs:["asyncBindings","wjProperty","axisX","axisY","binding","bindingX","cssClass","name","style","altStyle","symbolMarker","symbolSize","symbolStyle","visibility","itemsSource","interpolateNulls","tooltipContent","itemFormatter","fixedCost","variableCost","salesPrice","styles"],outputs:["initialized","renderingNg: rendering","renderedNg: rendered","visibilityChangePC: visibilityChange"],providers:[]};export{wjFlexChartBreakEvenMeta};var WjFlexChartBreakEven=function(e){__extends(WjFlexChartBreakEven,e);function WjFlexChartBreakEven(t,r,i){var a=e.call(this)||this;a.isInitialized=!1;a.wjProperty="series";a._wjBehaviour=WjDirectiveBehavior.attach(a,t,r,i);a.created();return a}t=WjFlexChartBreakEven;WjFlexChartBreakEven.prototype.created=function(){};WjFlexChartBreakEven.prototype.ngOnInit=function(){this._wjBehaviour.ngOnInit()};WjFlexChartBreakEven.prototype.ngAfterViewInit=function(){this._wjBehaviour.ngAfterViewInit()};WjFlexChartBreakEven.prototype.ngOnDestroy=function(){this._wjBehaviour.ngOnDestroy()};var t;WjFlexChartBreakEven.meta={outputs:wjFlexChartBreakEvenMeta.outputs,changeEvents:{"chart.seriesVisibilityChanged":["visibility"]},siblingId:"series"};
+WjFlexChartBreakEven.ɵfac = function WjFlexChartBreakEven_Factory(t) { return new (t || WjFlexChartBreakEven)(ɵngcc0.ɵɵdirectiveInject(ElementRef), ɵngcc0.ɵɵdirectiveInject(Injector), ɵngcc0.ɵɵdirectiveInject("WjComponent", 12)); };
+WjFlexChartBreakEven.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: WjFlexChartBreakEven, selectors: [["wj-flex-chart-break-even"]], inputs: { asyncBindings: "asyncBindings", wjProperty: "wjProperty", axisX: "axisX", axisY: "axisY", binding: "binding", bindingX: "bindingX", cssClass: "cssClass", name: "name", style: "style", altStyle: "altStyle", symbolMarker: "symbolMarker", symbolSize: "symbolSize", symbolStyle: "symbolStyle", visibility: "visibility", itemsSource: "itemsSource", interpolateNulls: "interpolateNulls", tooltipContent: "tooltipContent", itemFormatter: "itemFormatter", fixedCost: "fixedCost", variableCost: "variableCost", salesPrice: "salesPrice", styles: "styles" }, outputs: { initialized: "initialized", renderingNg: "rendering", renderedNg: "rendered", visibilityChangePC: "visibilityChange" }, features: [ɵngcc0.ɵɵProvidersFeature([{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartBreakEvenMeta.providers))], decls: 0, vars: 0, template: function WjFlexChartBreakEven_Template(rf, ctx) { }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjFlexChartBreakEven, [{
+        type: Component,
+        args: [{ selector: wjFlexChartBreakEvenMeta.selector, template: wjFlexChartBreakEvenMeta.template, inputs: wjFlexChartBreakEvenMeta.inputs, outputs: wjFlexChartBreakEvenMeta.outputs, providers: [{ provide: "WjComponent", useExisting: forwardRef((function () { return t; })) }].concat(wjFlexChartBreakEvenMeta.providers) }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [ElementRef]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [Injector]
+            }] }, { type: undefined, decorators: [{
+                type: Inject,
+                args: ["WjComponent"]
+            }, {
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }]; }, null); })();return WjFlexChartBreakEven=t=__decorate([,__param(0,Inject(ElementRef)),__param(1,Inject(Injector)),__param(2,Inject("WjComponent")),__param(2,SkipSelf()),__param(2,Optional())],WjFlexChartBreakEven)}(wjcChartAnalytics.BreakEven);export{WjFlexChartBreakEven};var moduleExports=[WjFlexChartTrendLine,WjFlexChartMovingAverage,WjFlexChartYFunctionSeries,WjFlexChartParametricFunctionSeries,WjFlexChartWaterfall,WjFlexChartBoxWhisker,WjFlexChartErrorBar,WjFlexChartBreakEven],WjChartAnalyticsModule=function(){function WjChartAnalyticsModule(){}
+WjChartAnalyticsModule.ɵfac = function WjChartAnalyticsModule_Factory(t) { return new (t || WjChartAnalyticsModule)(); };
+WjChartAnalyticsModule.ɵmod = /*@__PURE__*/ ɵngcc0.ɵɵdefineNgModule({ type: WjChartAnalyticsModule });
+WjChartAnalyticsModule.ɵinj = /*@__PURE__*/ ɵngcc0.ɵɵdefineInjector({ imports: [CommonModule] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(WjChartAnalyticsModule, [{
+        type: NgModule,
+        args: [{ imports: [CommonModule], declarations: moduleExports.slice(), exports: moduleExports.slice() }]
+    }], function () { return []; }, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(WjChartAnalyticsModule, { declarations: function () { return [WjFlexChartTrendLine, WjFlexChartMovingAverage, WjFlexChartYFunctionSeries, WjFlexChartParametricFunctionSeries, WjFlexChartWaterfall, WjFlexChartBoxWhisker, WjFlexChartErrorBar, WjFlexChartBreakEven]; }, imports: function () { return [CommonModule]; }, exports: function () { return [WjFlexChartTrendLine, WjFlexChartMovingAverage, WjFlexChartYFunctionSeries, WjFlexChartParametricFunctionSeries, WjFlexChartWaterfall, WjFlexChartBoxWhisker, WjFlexChartErrorBar, WjFlexChartBreakEven]; } }); })();return WjChartAnalyticsModule}();export{WjChartAnalyticsModule};

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@grapecity/wijmo": "^5.20241.9",
+    "@grapecity/wijmo.all": "^5.20241.9"
+  }
+}

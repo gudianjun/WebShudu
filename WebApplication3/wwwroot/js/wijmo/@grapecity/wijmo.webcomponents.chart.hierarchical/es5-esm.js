@@ -1,0 +1,14 @@
+﻿/*!
+    *
+    * Wijmo Library 5.20241.9
+    * https://developer.mescius.com/wijmo
+    *
+    * Copyright(c) MESCIUS inc. All rights reserved.
+    *
+    * Licensed under the End-User License Agreement For MESCIUS Wijmo Software.
+    * us.sales@mescius.com
+    * https://developer.mescius.com/wijmo/licensing
+    *
+    */
+
+var __extends=this&&this.__extends||function(){var extendStatics=function(e,t){return(extendStatics=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var r in t)t.hasOwnProperty(r)&&(e[r]=t[r])})(e,t)};return function(e,t){extendStatics(e,t);function __(){this.constructor=e}e.prototype=null===t?Object.create(t):(__.prototype=t.prototype,new __)}}();import{WjComponentBehavior}from"@grapecity/wijmo.webcomponents.base";import*as wjcChartHierarchical from"@grapecity/wijmo.chart.hierarchical";var _wj_ns_exists_5=!0,WjcSunburst=function(e){__extends(WjcSunburst,e);function WjcSunburst(){var t=e.call(this,document.createElement("div"))||this;t._wjBehaviour=WjComponentBehavior._attach(t);return t}Object.defineProperty(WjcSunburst,"observedAttributes",{get:function(){return WjComponentBehavior.getProps(this)},enumerable:!0,configurable:!0});WjcSunburst.prototype.connectedCallback=function(){this._wjBehaviour.lhConnected()};WjcSunburst.prototype.attributeChangedCallback=function(e,t,r){this._wjBehaviour.lhAttributeChanged(e,t,r)};WjcSunburst.prototype.disconnectedCallback=function(){this._wjBehaviour.lhDisconnected()};WjcSunburst.prototype.addEventListener=function(){for(var t=[],r=0;r<arguments.length;r++)t[r]=arguments[r];"string"==typeof t[0]?HTMLElement.prototype.addEventListener.apply(this,t):e.prototype.addEventListener.apply(this,t)};return WjcSunburst}(wjcChartHierarchical.Sunburst);export{WjcSunburst};_wj_ns_exists_5&&WjComponentBehavior.register("wjc-sunburst",WjcSunburst);var WjcTreeMap=function(e){__extends(WjcTreeMap,e);function WjcTreeMap(){var t=e.call(this,document.createElement("div"))||this;t._wjBehaviour=WjComponentBehavior._attach(t);return t}Object.defineProperty(WjcTreeMap,"observedAttributes",{get:function(){return WjComponentBehavior.getProps(this)},enumerable:!0,configurable:!0});WjcTreeMap.prototype.connectedCallback=function(){this._wjBehaviour.lhConnected()};WjcTreeMap.prototype.attributeChangedCallback=function(e,t,r){this._wjBehaviour.lhAttributeChanged(e,t,r)};WjcTreeMap.prototype.disconnectedCallback=function(){this._wjBehaviour.lhDisconnected()};WjcTreeMap.prototype.addEventListener=function(){for(var t=[],r=0;r<arguments.length;r++)t[r]=arguments[r];"string"==typeof t[0]?HTMLElement.prototype.addEventListener.apply(this,t):e.prototype.addEventListener.apply(this,t)};return WjcTreeMap}(wjcChartHierarchical.TreeMap);export{WjcTreeMap};_wj_ns_exists_5&&WjComponentBehavior.register("wjc-tree-map",WjcTreeMap);

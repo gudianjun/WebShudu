@@ -1,0 +1,14 @@
+﻿/*!
+    *
+    * Wijmo Library 5.20241.9
+    * https://developer.mescius.com/wijmo
+    *
+    * Copyright(c) MESCIUS inc. All rights reserved.
+    *
+    * Licensed under the End-User License Agreement For MESCIUS Wijmo Software.
+    * us.sales@mescius.com
+    * https://developer.mescius.com/wijmo/licensing
+    *
+    */
+
+"use strict";var __extends=this&&this.__extends||function(){var extendStatics=function(e,t){return(extendStatics=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var r in t)t.hasOwnProperty(r)&&(e[r]=t[r])})(e,t)};return function(e,t){extendStatics(e,t);function __(){this.constructor=e}e.prototype=null===t?Object.create(t):(__.prototype=t.prototype,new __)}}(),__importStar=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var r in e)Object.hasOwnProperty.call(e,r)&&(t[r]=e[r]);t.default=e;return t};Object.defineProperty(exports,"__esModule",{value:!0});var wijmo_angular_base_1=require("@grapecity/wijmo.angular.base"),mNg=__importStar(require("angular")),wjcChartInteraction=__importStar(require("@grapecity/wijmo.chart.interaction")),wjNg=mNg,wijmoChartInteractionName="wj.chart.interaction";exports.ngModuleName=wijmoChartInteractionName;var wijmoChartInteraction=wijmo_angular_base_1._registerNgModule(wijmoChartInteractionName);if(wijmo_angular_base_1.softRefChartInteraction()){wijmoChartInteraction.directive("wjFlexChartRangeSelector",[function(){return new WjFlexChartRangeSelector}]);wijmoChartInteraction.directive("wjFlexChartGestures",[function(){return new WjFlexChartChartGestures}]);wijmoChartInteraction.directive("wjFlexChartChartGestures",[function(){return new WjFlexChartChartGestures}])}var WjFlexChartRangeSelector=function(e){__extends(WjFlexChartRangeSelector,e);function WjFlexChartRangeSelector(){var t=e.call(this)||this;t.require=["?^wjFlexChart","?^wjFinancialChart"];return t}Object.defineProperty(WjFlexChartRangeSelector.prototype,"_controlConstructor",{get:function(){return wjcChartInteraction.RangeSelector},enumerable:!0,configurable:!0});return WjFlexChartRangeSelector}(wijmo_angular_base_1.WjDirective);exports.WjFlexChartRangeSelector=WjFlexChartRangeSelector;var WjFlexChartChartGestures=function(e){__extends(WjFlexChartChartGestures,e);function WjFlexChartChartGestures(){var t=e.call(this)||this;t.require=["?^wjFlexChart","?^wjFinancialChart"];return t}Object.defineProperty(WjFlexChartChartGestures.prototype,"_controlConstructor",{get:function(){return wjcChartInteraction.ChartGestures},enumerable:!0,configurable:!0});return WjFlexChartChartGestures}(wijmo_angular_base_1.WjDirective);exports.WjFlexChartChartGestures=WjFlexChartChartGestures;
